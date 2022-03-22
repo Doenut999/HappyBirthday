@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/birthday_margin"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/content_desc_background"
+        android:scaleType="centerCrop"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/androidparty"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/happy_birthday_message"
+        style="@style/wish_style"
+        android:layout_marginStart="@dimen/birthday_margin"
+        android:layout_marginTop="@dimen/birthday_margin"
+        android:text="@string/happy_birthday_wish"
+        android:textColor="#00695C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/wisher"
+        style="@style/wish_style"
+        android:layout_width="wrap_content"
+        android:shadowColor="@color/purple_500"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/birthday_margin"
+        android:layout_marginBottom="@dimen/birthday_margin"
+        android:text="@string/wisher"
+        android:textColor="#00695C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
